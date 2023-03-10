@@ -1,0 +1,278 @@
+> 
+> a
+ [1]  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+[19] 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43
+[37] 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61
+[55] 62 63 64 65 66 67 68 69 70 71 72 73 74 75
+> help(abs)
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> a <- 8:75
+> a
+ [1]  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+[19] 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43
+[37] 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61
+[55] 62 63 64 65 66 67 68 69 70 71 72 73 74 75
+> b <- length(a)
+> b
+[1] 68
+> c <- a^2
+> c
+ [1]   64   81  100  121  144  169  196  225  256  289  324
+[12]  361  400  441  484  529  576  625  676  729  784  841
+[23]  900  961 1024 1089 1156 1225 1296 1369 1444 1521 1600
+[34] 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601
+[45] 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844
+[56] 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329
+[67] 5476 5625
+> d <- sum(c)
+> e <- d/b
+> e
+[1] 2107.5
+> apropos("plot", mode = "function")
+ [1] ".rs.api.savePlotAsImage"           
+ [2] ".rs.replayNotebookPlots"           
+ [3] ".rs.reticulate.matplotlib.onLoaded"
+ [4] ".rs.reticulate.matplotlib.showHook"
+ [5] "assocplot"                         
+ [6] "barplot"                           
+ [7] "barplot.default"                   
+ [8] "biplot"                            
+ [9] "boxplot"                           
+[10] "boxplot.default"                   
+[11] "boxplot.matrix"                    
+[12] "boxplot.stats"                     
+[13] "cdplot"                            
+[14] "coplot"                            
+[15] "fourfoldplot"                      
+[16] "interaction.plot"                  
+[17] "lag.plot"                          
+[18] "matplot"                           
+[19] "monthplot"                         
+[20] "mosaicplot"                        
+[21] "plot"                              
+[22] "plot"                              
+[23] "plot.default"                      
+[24] "plot.design"                       
+[25] "plot.ecdf"                         
+[26] "plot.function"                     
+[27] "plot.new"                          
+[28] "plot.spec.coherency"               
+[29] "plot.spec.phase"                   
+[30] "plot.stepfun"                      
+[31] "plot.ts"                           
+[32] "plot.window"                       
+[33] "plot.xy"                           
+[34] "preplot"                           
+[35] "qqplot"                            
+[36] "recordPlot"                        
+[37] "replayPlot"                        
+[38] "savePlot"                          
+[39] "screeplot"                         
+[40] "spineplot"                         
+[41] "sunflowerplot"                     
+[42] "termplot"                          
+[43] "ts.plot"                           
+> getwd()
+[1] "E:/Users/denn/Documents"
+> setwd("E:/Users/denn/Desktop/apu")
+> getwd()
+[1] "E:/Users/denn/Desktop/apu"
+> a <- "tablet"
+> save(a, file = "workdir")
+> load("workdir")
+> remove(a)
+> a
+Error: object 'a' not found
+> load("workdir")
+> a
+[1] "tablet"
+> install.packages("gridExtra")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/gridExtra_2.3.zip'
+Content type 'application/zip' length 1109470 bytes (1.1 MB)
+downloaded 1.1 MB
+
+pakiet ‘gridExtra’ został pomyślnie rozpakowany oraz sumy MD5 zostały sprawdzone
+
+Pobrane pakiety binarne są w
+	E:\Users\denn\AppData\Local\Temp\RtmpuQFdGI\downloaded_packages
+> help(package="gridExtra")
+> library(gridExtra)
+> a <- head(volcano[,1:10])
+> grid.table(a)
+> seq(1000,200,-8)
+  [1] 1000  992  984  976  968  960  952  944  936  928  920  912
+ [13]  904  896  888  880  872  864  856  848  840  832  824  816
+ [25]  808  800  792  784  776  768  760  752  744  736  728  720
+ [37]  712  704  696  688  680  672  664  656  648  640  632  624
+ [49]  616  608  600  592  584  576  568  560  552  544  536  528
+ [61]  520  512  504  496  488  480  472  464  456  448  440  432
+ [73]  424  416  408  400  392  384  376  368  360  352  344  336
+ [85]  328  320  312  304  296  288  280  272  264  256  248  240
+ [97]  232  224  216  208  200
+> a<-seq(50,30)
+> b<-seq(4,50)
+> c<-c(b,a)
+> c
+ [1]  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+[22] 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
+[43] 46 47 48 49 50 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35
+[64] 34 33 32 31 30
+> ramka
+Error: object 'ramka' not found
+> 
+> nazwa <- c('iPad A', 'iPad B', 'iPad C', 'iPad D', 'iPad E', 'iPad F', 'iPad G', 'iPad H', 'iPad I', 'iPad J')
+> pamiec_RAM <- c(4, 2, 2, 4, 2, 2, 8, 4, 2, 4)
+> wyswietlacz <- c('Liquid Retina', 'LCD', 'LCD', 'LCD', 'Retina', 'LCD', 'LCD', 'Retina', 'LCD','Liquid Retina')
+> modem <-c('LTE', 'LTE', 'WiFi', 'LTE', 'WiFi', 'LTE', 'LTE', 'LTE', 'WiFi', 'LTE')
+> pamiec_wbudowana <- c(64, 32, 32, 64, 32, 32, 48, 64, 32, 64)
+> cena <- c(5000,3000,3300,5000,3400,3400,4000,5100,3000, 4999)
+> liczba_opinii <- c(111,11,51,43,150,113,10,300,140,21)
+> ramka <- data.frame(modem, wyswietlacz, pamiec_RAM, pamiec_wbudowana,cena, liczba_opinii)
+> ramka
+   modem   wyswietlacz pamiec_RAM pamiec_wbudowana cena liczba_opinii
+1    LTE Liquid Retina          4               64 5000           111
+2    LTE           LCD          2               32 3000            11
+3   WiFi           LCD          2               32 3300            51
+4    LTE           LCD          4               64 5000            43
+5   WiFi        Retina          2               32 3400           150
+6    LTE           LCD          2               32 3400           113
+7    LTE           LCD          8               48 4000            10
+8    LTE        Retina          4               64 5100           300
+9   WiFi           LCD          2               32 3000           140
+10   LTE Liquid Retina          4               64 4999            21
+> srednia <- mean(ramka$cena)
+> srednia
+[1] 4019.9
+> nowy_ipad <- data.frame(modem = "LTE", wyswietlacz = "Retina", pamiec_RAM = 8, pamiec_wbudowana = 64, cena = 5500, liczba_opinii = 83)
+> ramka <- rbind(ramka, nowy_ipad)
+> srednia <- mean(ramka$cena)
+> srednia
+[1] 4154.455
+> ocena_klientow <- c (4.5, 3.5, 3, 3, 2.5, 3, 4, 4, 4.5, 4.5, 5)
+> ramka <- cbind(ramka, ocena_klientow)
+> ramka
+   modem   wyswietlacz pamiec_RAM pamiec_wbudowana cena liczba_opinii
+1    LTE Liquid Retina          4               64 5000           111
+2    LTE           LCD          2               32 3000            11
+3   WiFi           LCD          2               32 3300            51
+4    LTE           LCD          4               64 5000            43
+5   WiFi        Retina          2               32 3400           150
+6    LTE           LCD          2               32 3400           113
+7    LTE           LCD          8               48 4000            10
+8    LTE        Retina          4               64 5100           300
+9   WiFi           LCD          2               32 3000           140
+10   LTE Liquid Retina          4               64 4999            21
+11   LTE        Retina          8               64 5500            83
+   ocena_klientow
+1             4.5
+2             3.5
+3             3.0
+4             3.0
+5             2.5
+6             3.0
+7             4.0
+8             4.0
+9             4.5
+10            4.5
+11            5.0
+> mean(ramka[ramka$ocena_klientow, 'cena'])
+[1] 4054.545
+> mean(ramka[ramka$ocena_klientow==1.0, 'cena'])
+[1] NaN
+> mean(ramka[ramka$ocena_klientow==4.0, 'cena'])
+[1] 4550
+> mean(ramka[ramka$ocena_klientow==2.5, 'cena'])
+[1] 3400
+> mean(ramka[ramka$ocena_klientow==3.0, 'cena'])
+[1] 3900
+> mean(ramka[ramka$ocena_klientow==3.5, 'cena'])
+[1] 3000
+> mean(ramka[ramka$ocena_klientow==4.0, 'cena'])
+[1] 4550
+> mean(ramka[ocena_klientow, 'cena'])
+[1] 4054.545
+> mean(ramka[ramka$ocena_klientow, 'cena'])
+[1] 4054.545
+> mean(ramka[ocena_klientow=3.0, 'cena'])
+Error in `[.data.frame`(ramka, ocena_klientow = 3, "cena") : 
+  unused argument (ocena_klientow = 3)
+> mean(ramka[ocena_klientow==3.5, 'cena'])
+[1] 3000
+> mean(ramka[ramka$ocena_klientow==3.5, 'cena'])
+[1] 3000
+> mean(ramka[ocena_klientow==2.5, 'cena'])
+[1] 3400
+> mean(ramka[ocena_klientow==3.0, 'cena'])
+[1] 3900
+> mean(ramka[ocena_klientow==3.5, 'cena'])
+[1] 3000
+> mean(ramka[ocena_klientow==4.0, 'cena'])
+[1] 4550
+> mean(ramka[ocena_klientow==4.5, 'cena'])
+[1] 4333
+> nowy_ipad <- data.frame(modem = "LTE", wyswietlacz = "Retina", pamiec_RAM = 4, pamiec_wbudowana = 64, cena = 5700, liczba_opinii = 13, ocena_klientow = 3.0)
+> ramka <- rbind(ramka, nowy_ipad)
+> nowy_ipad <- data.frame(modem = "LTE", wyswietlacz = "Retina", pamiec_RAM = 4, pamiec_wbudowana = 128, cena = 5000, liczba_opinii = 63, ocena_klientow = 4.0)
+> ramka <- rbind(ramka, nowy_ipad)
+> nowy_ipad <- data.frame(modem = "WiFi", wyswietlacz = "Retina", pamiec_RAM = 2, pamiec_wbudowana = 18, cena = 3000, liczba_opinii = 123, ocena_klientow = 3.5)
+> srednia <- mean(ramka$cena)
+> nowy_ipad <- data.frame(modem = "WiFi", wyswietlacz = "Retina", pamiec_RAM = 2, pamiec_wbudowana = 18, cena = 3000, liczba_opinii = 123, ocena_klientow = 3.5)
+> ramka <- rbind(ramka, nowy_ipad)
+> count <- table(ramka$ocena_klientow)
+> barplot(count, main = "Liczebność reprezentantów każdej z ocen", ylim = c(0,4), xlab="Ocena", ylab = "Liczba ocen")
+> percentage <- table(ramka$ocena_klientow)/length(ramka$ocena_klientow)
+> > pie(percentage)
+Error: unexpected '>' in ">"
+> pie(percentage)
+> percentage <- table(ramka$ocena_klientow)/length(ramka$ocena_klientow)
+> pie(percentage)
+> View(count)
+> View(percentage)
+> install.packages("plotrix")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/plotrix_3.8-2.zip'
+Content type 'application/zip' length 1138080 bytes (1.1 MB)
+downloaded 1.1 MB
+
+pakiet ‘plotrix’ został pomyślnie rozpakowany oraz sumy MD5 zostały sprawdzone
+
+Pobrane pakiety binarne są w
+	E:\Users\denn\AppData\Local\Temp\RtmpuQFdGI\downloaded_packages
+> library(plotrix)
+> fan.plot(percentage, labels = names(percentage), main = "Rozkład procentowy")
+> fan.plot(percentage, labels = names(percentage), main = "Rozkład wachlarzowy")
+> paste(nazwa, "ma ocenę klientów", ocena_klientow, "bo ma liczbę opinii", liczba_opinii, sep = " ")
+ [1] "iPad A ma ocenę klientów 4.5 bo ma liczbę opinii 111" "iPad B ma ocenę klientów 3.5 bo ma liczbę opinii 11" 
+ [3] "iPad C ma ocenę klientów 3 bo ma liczbę opinii 51"    "iPad D ma ocenę klientów 3 bo ma liczbę opinii 43"   
+ [5] "iPad E ma ocenę klientów 2.5 bo ma liczbę opinii 150" "iPad F ma ocenę klientów 3 bo ma liczbę opinii 113"  
+ [7] "iPad G ma ocenę klientów 4 bo ma liczbę opinii 10"    "iPad H ma ocenę klientów 4 bo ma liczbę opinii 300"  
+ [9] "iPad I ma ocenę klientów 4.5 bo ma liczbę opinii 140" "iPad J ma ocenę klientów 4.5 bo ma liczbę opinii 21" 
+[11] "iPad A ma ocenę klientów 5 bo ma liczbę opinii 111"  
+> write.csv(ramka, "E:/Users/denn/Desktop//ramka.csv", row.names=TRUE)
+> read.csv("E:/Users/denn/Desktop//ramka.csv")
+    X modem   wyswietlacz pamiec_RAM pamiec_wbudowana cena liczba_opinii ocena_klientow
+1   1   LTE Liquid Retina          4               64 5000           111            4.5
+2   2   LTE           LCD          2               32 3000            11            3.5
+3   3  WiFi           LCD          2               32 3300            51            3.0
+4   4   LTE           LCD          4               64 5000            43            3.0
+5   5  WiFi        Retina          2               32 3400           150            2.5
+6   6   LTE           LCD          2               32 3400           113            3.0
+7   7   LTE           LCD          8               48 4000            10            4.0
+8   8   LTE        Retina          4               64 5100           300            4.0
+9   9  WiFi           LCD          2               32 3000           140            4.5
+10 10   LTE Liquid Retina          4               64 4999            21            4.5
+11 11   LTE        Retina          8               64 5500            83            5.0
+12 12   LTE        Retina          4               64 5700            13            3.0
+13 13   LTE        Retina          4              128 5000            63            4.0
+14 14  WiFi        Retina          2               18 3000           123            3.5
