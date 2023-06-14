@@ -1,0 +1,158 @@
+Version: 2
+
+Alternatives: &alternatives
+   iPad 2021:
+      wyswietlacz: 10.2
+      ram: 8
+      pamiec: 64
+      aparat: 12
+      cena: 1749
+      kolor: szary
+      system operacyjny: iPadOS15
+      matryca: Liquid Retina
+      procesor: 8
+
+   iPad (10gen) 2022:
+      wyswietlacz: 10.9 
+      ram: 8
+      pamiec: 64
+      aparat: 12
+      cena: 2749
+      kolor: szary
+      system operacyjny: iPadOS16
+      matryca: Liquid Retina
+      procesor: 6
+  
+   iPad Air 2020:
+      wyswietlacz: 10.9
+      ram: 8
+      pamiec: 256
+      aparat: 8
+      cena: 4899
+      kolor: srebrny
+      system operacyjny: iPadOS14
+      matryca: Retina
+      procesor: 6
+
+   iPad Air 2022:
+      wyswietlacz: 10.9 
+      ram: 8
+      pamiec: 64
+      aparat: 12
+      cena: 3359
+      kolor: szary
+      system operacyjny: iPadOS15
+      matryca: Liquid Retina XDR
+      procesor: 8
+
+   iPad Pro 2021:
+      wyswietlacz: 11
+      ram: 16 
+      pamiec: 256
+      aparat: 12
+      cena: 7699
+      kolor: srebrny
+      system operacyjny: iPadOS14
+      matryca: Liquid Retina
+      procesor: 8
+
+   iPad Pro 2022 - 11:
+      wyswietlacz: 11
+      ram: 8 
+      pamiec: 128
+      aparat: 12
+      cena: 5199
+      kolor: szary
+      system operacyjny: iPadOS16
+      matryca: Liquid Retina
+      procesor: 8
+
+   iPad Pro 2022 - 12.9:
+      wyswietlacz: 12.9
+      ram: 8
+      pamiec: 1024
+      aparat: 12
+      cena: 6599
+      kolor: szary 
+      system operacyjny: iPadOS16
+      matryca: Liquid Retina XDR
+      procesor: 8
+
+   iPad Pro 2022 - 11 - 2TB:
+      wyswietlacz: 11
+      ram: 8
+      pamiec: 2048
+      aparat: 12
+      cena: 8599
+      kolor: szary 
+      system operacyjny: iPadOS16
+      matryca: Liquid Retina
+      procesor: 8
+
+   iPad mini 2021:
+      wyswietlacz: 8.3
+      ram: 4
+      pamiec: 64
+      aparat: 6
+      cena: 2899
+      kolor: fioletowy
+      system operacyjny: iPadOS15
+      matryca: Retina
+      procesor: 6
+
+   iPad mini 2019:
+      wyswietlacz: 7.9
+      ram: 3
+      pamiec: 64
+      aparat: 6
+      cena: 2719
+      kolor: szary
+      system operacyjny: iPadOS12
+      matryca: Retina
+      procesor: 6
+
+
+Goal:
+  name: Zakup tableta iPad dla klienta
+  preferences:
+    #Wydajnosc > Jakosc > Styl > Cena
+    pairwise:
+      - [Wydajnosc, Jakosc, 3]
+      - [Wydajnosc, Cena, 7]
+      - [Wydajnosc, Styl, 9]
+      - [Jakosc, Styl, 5]
+      - [Jakosc, Cena, 3] 
+      - [Styl, Cena, 2]
+  children: 
+    Wydajnosc:
+      preferences:
+        #Jak najwieksza liczba rdzeni
+        pairwiseFunction:
+          function(a1, a2) max(1/9, max(1/9, a1$procesor/a2$procesor))
+      children: *alternatives 
+
+    Jakosc: 
+       preferences:
+       #Jak najwyższa jakosc aparatu
+           pairwiseFunction: 
+             function(a1, a2) max(1/9, max(1/9, a1$aparat/a2$aparat))
+       children: *alternatives	
+
+    Cena:
+      preferences:
+      #Jak najniższa cena
+        pairwiseFunction:
+          function(a1, a2) max(1/9, min(9, a2$cena/a1$cena))
+      children: *alternatives
+
+    Styl: 
+      preferences:
+        pairwiseFunction: >
+          WyborKoloru <- function(a1, a2) {
+            if (a1$kolor == 'srebrny' & a2$kolor == 'szary') return (2)
+            if (a1$kolor == 'szary' & a2$kolor == 'fioletowy') return (3)
+            if (a1$kolor == 'fioletowy' & a2$kolor == 'srebrny') return (5)
+            if (a1$kolor == a2$kolor) return (1)
+            return (1)
+          }
+      children: *alternatives

@@ -1,0 +1,97 @@
+library(data.tree)
+> library(formattable)
+> library(DiagrammeR)
+> library(ahp)
+> AHPLoad<-Load("iPady.yml")
+> print(AHPLoad, filterFun = isNotLeaf)
+                       levelName
+1 Zakup tableta iPad dla klienta
+2  ¦--Wydajnosc                 
+3  ¦--Jakosc                    
+4  ¦--Cena                      
+5  °--Styl                      
+
+> Calculate(AHPLoad)
+> Analyze(AHPLoad)
+                                 Weight iPad 2021
+1 Zakup tableta iPad dla klienta 100.0%     11.8%
+2  ¦--Wydajnosc                   60.5%      6.7%
+3  ¦--Jakosc                      25.0%      2.9%
+4  ¦--Styl                         7.9%      0.8%
+5  °--Cena                         6.6%      1.4%
+  iPad Air 2022 iPad Pro 2021 iPad Pro 2022 - 11
+1         11.1%         10.9%              10.8%
+2          6.7%          6.7%               6.7%
+3          2.9%          2.9%               2.9%
+4          0.8%          1.0%               0.7%
+5          0.7%          0.3%               0.5%
+  iPad Pro 2022 - 12.9 iPad Pro 2022 - 11 - 2TB
+1                10.7%                    10.6%
+2                 6.7%                     6.7%
+3                 2.9%                     2.9%
+4                 0.7%                     0.7%
+5                 0.4%                     0.3%
+  iPad (10gen) 2022 iPad Air 2020 iPad mini 2019
+1              9.6%          8.6%           8.0%
+2              5.0%          5.0%           5.0%
+3              2.9%          1.9%           1.4%
+4              0.8%          1.1%           0.6%
+5              0.9%          0.5%           0.9%
+  iPad mini 2021 Inconsistency
+1           7.8%          6.4%
+2           5.0%          0.0%
+3           1.4%          0.0%
+4           0.5%          3.8%
+5           0.8%          0.0%
+> AnalyzeTable(AHPLoad)
+> Visualize(AHPLoad)
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
+[1] "Node$fieldsAll will be deprecated in the next release. Please use Node$attributesAll instead."
+[1] "Node$fields will be deprecated in the next release. Please use Node$attributes instead."
