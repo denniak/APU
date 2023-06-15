@@ -1,0 +1,106 @@
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> install.packages("C50")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/C50_0.1.8.zip'
+Content type 'application/zip' length 475546 bytes (464 KB)
+downloaded 464 KB
+
+package ‘C50’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpeAbzcC\downloaded_packages
+> library("C50")
+Warning message:
+pakiet ‘C50’ został zbudowany w wersji R 4.1.3 
+> data <- read.csv("E:/Users/denn/Desktop/iPady.csv") 
+> data
+                      model wyswietlacz procesor ram pamiec aparat cena ocena_klienta     kolor system_operacyjny           matryca
+1                 iPad 2021        10.2        8   8     64     12 1749             3     szary          iPadOS15     Liquid Retina
+2           iPad 10gen 2022        10.9        8   8     64     12 2749             4     szary          iPadOS16     Liquid Retina
+3             iPad Air 2020        10.9        8   8    256      8 4899             2   srebrny          iPadOS14            Retina
+4             iPad Air 2022        10.9        8   8     64     12 3359             5     szary          iPadOS15 Liquid Retina XDR
+5             iPad Pro 2021        11.0        8  16    256     12 7699             4   srebrny          iPadOS14     Liquid Retina
+6        iPad Pro 2022 - 11        11.0        8   8    128     12 5199             5     szary          iPadOS16     Liquid Retina
+7      iPad Pro 2022 - 12.9        12.9        8   8   1024     12 6599             2     szary          iPadOS16 Liquid Retina XDR
+8  iPad Pro 2022 - 11 - 2TB        11.0        8   8   2048     12 8599             3     szary          iPadOS16     Liquid Retina
+9            iPad mini 2021         8.3        6   4     64      6 2899             5 fioletowy          iPadOS15            Retina
+10           iPad mini 2019         7.9        6   3     64      6 2719             4     szary          iPadOS12            Retina
+> data$ocena_klienta <- factor(data$ocena_klienta)
+> model <- C5.0(x=data[,2:7], y=data$ocena_klienta)
+> model
+
+Call:
+C5.0.default(x = data[, 2:7], y = data$ocena_klienta)
+
+Classification Tree
+Number of samples: 10 
+Number of predictors: 6 
+
+Tree size: 3 
+
+Non-standard options: attempt to group attributes
+
+> summary(model)
+
+Call:
+C5.0.default(x = data[, 2:7], y = data$ocena_klienta)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Thu Jun 15 20:13:05 2023
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 10 cases (7 attributes) from undefined.data
+
+Decision tree:
+
+pamiec > 128: 2 (4/2)
+pamiec <= 128:
+:...cena <= 2749: 4 (3/1)
+    cena > 2749: 5 (3)
+
+
+Evaluation on training data (10 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     3    3(30.0%)   <<
+
+
+	   (a)   (b)   (c)   (d)    <-classified as
+	  ----  ----  ----  ----
+	     2                      (a): class 2
+	     1           1          (b): class 3
+	     1           2          (c): class 4
+	                       3    (d): class 5
+
+
+	Attribute usage:
+
+	100.00%	pamiec
+	 60.00%	cena
+
+
+Time: 0.0 secs
+
+> plot(model)
+> 
