@@ -1,0 +1,376 @@
+
+Installation complete.
+
+
+Restarting R session...
+
+> install.packages("keras")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+instalowanie dodatkowych zależności ‘zeallot’
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/zeallot_0.1.0.zip'
+Content type 'application/zip' length 62280 bytes (60 KB)
+downloaded 60 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/keras_2.11.1.zip'
+Content type 'application/zip' length 3204835 bytes (3.1 MB)
+downloaded 3.1 MB
+
+package ‘zeallot’ successfully unpacked and MD5 sums checked
+package ‘keras’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpG8Endr\downloaded_packages
+Warning message:
+pakiet ‘tensorflow’ został zbudowany w wersji R 4.1.3 
+> library(keras)
+Warning message:
+pakiet ‘keras’ został zbudowany w wersji R 4.1.3 
+> install_keras()
+
+E:\Users\denn\Documents>CALL "E:\Users\denn\AppData\Local\r-miniconda\condabin\activate.bat" "E:\Users\denn\AppData\Local\r-miniconda\envs\r-reticulate" 
+
+E:\Users\denn\Documents>conda.bat activate "E:\Users\denn\AppData\Local\r-miniconda\envs\r-reticulate" 
+Collecting tensorflow==2.11.*
+  Using cached tensorflow-2.11.1-cp38-cp38-win_amd64.whl (1.9 kB)
+Collecting tensorflow-hub
+  Downloading tensorflow_hub-0.13.0-py2.py3-none-any.whl (100 kB)
+     ------------------------------------ 100.6/100.6 kB 528.2 kB/s eta 0:00:00
+Collecting tensorflow-datasets
+  Downloading tensorflow_datasets-4.9.2-py3-none-any.whl (5.4 MB)
+     ---------------------------------------- 5.4/5.4 MB 26.5 MB/s eta 0:00:00
+Collecting scipy
+  Downloading scipy-1.10.1-cp38-cp38-win_amd64.whl (42.2 MB)
+     --------------------------------------- 42.2/42.2 MB 40.9 MB/s eta 0:00:00
+Collecting requests
+  Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Collecting Pillow
+  Downloading Pillow-9.5.0-cp38-cp38-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 79.0 MB/s eta 0:00:00
+Collecting h5py
+  Using cached h5py-3.8.0-cp38-cp38-win_amd64.whl (2.7 MB)
+Collecting pandas
+  Downloading pandas-2.0.2-cp38-cp38-win_amd64.whl (10.8 MB)
+     --------------------------------------- 10.8/10.8 MB 65.6 MB/s eta 0:00:00
+Collecting pydot
+  Downloading pydot-1.4.2-py2.py3-none-any.whl (21 kB)
+Collecting tensorflow-intel==2.11.1 (from tensorflow==2.11.*)
+  Using cached tensorflow_intel-2.11.1-cp38-cp38-win_amd64.whl (266.3 MB)
+Collecting absl-py>=1.0.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached absl_py-1.4.0-py3-none-any.whl (126 kB)
+Collecting astunparse>=1.6.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting flatbuffers>=2.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached flatbuffers-23.5.26-py2.py3-none-any.whl (26 kB)
+Collecting gast<=0.4.0,>=0.2.1 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
+Collecting google-pasta>=0.1.1 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting libclang>=13.0.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached libclang-16.0.0-py2.py3-none-win_amd64.whl (24.4 MB)
+Collecting numpy>=1.20 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached numpy-1.24.3-cp38-cp38-win_amd64.whl (14.9 MB)
+Collecting opt-einsum>=2.3.2 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Collecting packaging (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting protobuf<3.20,>=3.9.2 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached protobuf-3.19.6-cp38-cp38-win_amd64.whl (896 kB)
+Collecting setuptools (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached setuptools-67.8.0-py3-none-any.whl (1.1 MB)
+Collecting six>=1.12.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting termcolor>=1.1.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached termcolor-2.3.0-py3-none-any.whl (6.9 kB)
+Collecting typing-extensions>=3.6.6 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached typing_extensions-4.6.3-py3-none-any.whl (31 kB)
+Collecting wrapt>=1.11.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached wrapt-1.15.0-cp38-cp38-win_amd64.whl (36 kB)
+Collecting grpcio<2.0,>=1.24.3 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached grpcio-1.54.2-cp38-cp38-win_amd64.whl (4.1 MB)
+Collecting tensorboard<2.12,>=2.11 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached tensorboard-2.11.2-py3-none-any.whl (6.0 MB)
+Collecting tensorflow-estimator<2.12,>=2.11.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached tensorflow_estimator-2.11.0-py2.py3-none-any.whl (439 kB)
+Collecting keras<2.12,>=2.11.0 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached keras-2.11.0-py2.py3-none-any.whl (1.7 MB)
+Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached tensorflow_io_gcs_filesystem-0.31.0-cp38-cp38-win_amd64.whl (1.5 MB)
+Collecting array-record (from tensorflow-datasets)
+  Downloading array_record-0.2.0-py38-none-any.whl (3.0 MB)
+     ---------------------------------------- 3.0/3.0 MB 93.1 MB/s eta 0:00:00
+Collecting click (from tensorflow-datasets)
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ---------------------------------------- 96.6/96.6 kB ? eta 0:00:00
+Collecting dm-tree (from tensorflow-datasets)
+  Downloading dm_tree-0.1.8-cp38-cp38-win_amd64.whl (101 kB)
+     ---------------------------------------- 101.4/101.4 kB ? eta 0:00:00
+Collecting etils[enp,epath]>=0.9.0 (from tensorflow-datasets)
+  Downloading etils-1.3.0-py3-none-any.whl (126 kB)
+     -------------------------------------- 126.4/126.4 kB 7.3 MB/s eta 0:00:00
+Collecting promise (from tensorflow-datasets)
+  Downloading promise-2.3.tar.gz (19 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of tensorflow-datasets to determine which version is compatible with other requirements. This could take a while.
+Collecting tensorflow-datasets
+  Downloading tensorflow_datasets-4.9.1-py3-none-any.whl (5.4 MB)
+     ---------------------------------------- 5.4/5.4 MB 57.9 MB/s eta 0:00:00
+  Downloading tensorflow_datasets-4.9.0-py3-none-any.whl (5.4 MB)
+     ---------------------------------------- 5.4/5.4 MB 69.0 MB/s eta 0:00:00
+Collecting psutil (from tensorflow-datasets)
+  Downloading psutil-5.9.5-cp36-abi3-win_amd64.whl (255 kB)
+     ---------------------------------------- 255.1/255.1 kB ? eta 0:00:00
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading tensorflow_metadata-1.13.1-py3-none-any.whl (28 kB)
+Collecting toml (from tensorflow-datasets)
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting tqdm (from tensorflow-datasets)
+  Downloading tqdm-4.65.0-py3-none-any.whl (77 kB)
+     ---------------------------------------- 77.1/77.1 kB ? eta 0:00:00
+Collecting importlib-resources (from tensorflow-datasets)
+  Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+Collecting charset-normalizer<4,>=2 (from requests)
+  Using cached charset_normalizer-3.1.0-cp38-cp38-win_amd64.whl (96 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Downloading urllib3-2.0.3-py3-none-any.whl (123 kB)
+     ---------------------------------------- 123.6/123.6 kB ? eta 0:00:00
+Collecting certifi>=2017.4.17 (from requests)
+  Using cached certifi-2023.5.7-py3-none-any.whl (156 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ---------------------------------------- 247.7/247.7 kB ? eta 0:00:00
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2023.3-py2.py3-none-any.whl (502 kB)
+     ---------------------------------------- 502.3/502.3 kB ? eta 0:00:00
+Collecting tzdata>=2022.1 (from pandas)
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ---------------------------------------- 341.8/341.8 kB ? eta 0:00:00
+Collecting pyparsing>=2.1.4 (from pydot)
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ---------------------------------------- 98.3/98.3 kB 5.5 MB/s eta 0:00:00
+Collecting zipp (from etils[enp,epath]>=0.9.0->tensorflow-datasets)
+  Using cached zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Collecting colorama (from click->tensorflow-datasets)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting googleapis-common-protos<2,>=1.52.0 (from tensorflow-metadata->tensorflow-datasets)
+  Downloading googleapis_common_protos-1.59.1-py2.py3-none-any.whl (224 kB)
+     ---------------------------------------- 224.5/224.5 kB ? eta 0:00:00
+INFO: pip is looking at multiple versions of tensorflow-metadata to determine which version is compatible with other requirements. This could take a while.
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading tensorflow_metadata-1.13.0-py3-none-any.whl (53 kB)
+     ---------------------------------------- 53.3/53.3 kB ? eta 0:00:00
+Collecting wheel<1.0,>=0.23.0 (from astunparse>=1.6.0->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached wheel-0.40.0-py3-none-any.whl (64 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached google_auth-2.20.0-py2.py3-none-any.whl (181 kB)
+Collecting google-auth-oauthlib<0.5,>=0.4.1 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached google_auth_oauthlib-0.4.6-py2.py3-none-any.whl (18 kB)
+Collecting markdown>=2.6.8 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached Markdown-3.4.3-py3-none-any.whl (93 kB)
+Collecting tensorboard-data-server<0.7.0,>=0.6.0 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached tensorboard_data_server-0.6.1-py3-none-any.whl (2.4 kB)
+Collecting tensorboard-plugin-wit>=1.6.0 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached tensorboard_plugin_wit-1.8.1-py3-none-any.whl (781 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached Werkzeug-2.3.6-py3-none-any.whl (242 kB)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached cachetools-5.3.1-py3-none-any.whl (9.3 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached rsa-4.9-py3-none-any.whl (34 kB)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Using cached urllib3-1.26.16-py2.py3-none-any.whl (143 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Collecting importlib-metadata>=4.4 (from markdown>=2.6.8->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached importlib_metadata-6.6.0-py3-none-any.whl (22 kB)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached MarkupSafe-2.1.3-cp38-cp38-win_amd64.whl (17 kB)
+Collecting pyasn1<0.6.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached pyasn1-0.5.0-py2.py3-none-any.whl (83 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.12,>=2.11->tensorflow-intel==2.11.1->tensorflow==2.11.*)
+  Using cached oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Building wheels for collected packages: promise
+  Building wheel for promise (setup.py): started
+  Building wheel for promise (setup.py): finished with status 'done'
+  Created wheel for promise: filename=promise-2.3-py3-none-any.whl size=21547 sha256=03f6d167c55fee2eb6a3cf9a316e52d9181052ae7466bb1880c09f678e7220ea
+  Stored in directory: e:\users\denn\appdata\local\pip\cache\wheels\54\aa\01\724885182f93150035a2a91bce34a12877e8067a97baaf5dc8
+Successfully built promise
+Installing collected packages: tensorboard-plugin-wit, pytz, libclang, flatbuffers, dm-tree, zipp, wrapt, wheel, urllib3, tzdata, typing-extensions, toml, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, setuptools, pyparsing, pyasn1, psutil, protobuf, Pillow, packaging, oauthlib, numpy, MarkupSafe, keras, idna, grpcio, gast, etils, colorama, charset-normalizer, certifi, cachetools, absl-py, werkzeug, tqdm, tensorflow-hub, scipy, rsa, requests, python-dateutil, pydot, pyasn1-modules, promise, opt-einsum, importlib-resources, importlib-metadata, h5py, googleapis-common-protos, google-pasta, click, astunparse, tensorflow-metadata, requests-oauthlib, pandas, markdown, google-auth, google-auth-oauthlib, array-record, tensorflow-datasets, tensorboard, tensorflow-intel, tensorflow
+Successfully installed MarkupSafe-2.1.3 Pillow-9.5.0 absl-py-1.4.0 array-record-0.2.0 astunparse-1.6.3 cachetools-5.3.1 certifi-2023.5.7 charset-normalizer-3.1.0 click-8.1.3 colorama-0.4.6 dm-tree-0.1.8 etils-1.3.0 flatbuffers-23.5.26 gast-0.4.0 google-auth-2.20.0 google-auth-oauthlib-0.4.6 google-pasta-0.2.0 googleapis-common-protos-1.59.1 grpcio-1.54.2 h5py-3.8.0 idna-3.4 importlib-metadata-6.6.0 importlib-resources-5.12.0 keras-2.11.0 libclang-16.0.0 markdown-3.4.3 numpy-1.24.3 oauthlib-3.2.2 opt-einsum-3.3.0 packaging-23.1 pandas-2.0.2 promise-2.3 protobuf-3.19.6 psutil-5.9.5 pyasn1-0.5.0 pyasn1-modules-0.3.0 pydot-1.4.2 pyparsing-3.0.9 python-dateutil-2.8.2 pytz-2023.3 requests-2.31.0 requests-oauthlib-1.3.1 rsa-4.9 scipy-1.10.1 setuptools-67.7.2 six-1.16.0 tensorboard-2.11.2 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.1 tensorflow-2.11.1 tensorflow-datasets-4.9.0 tensorflow-estimator-2.11.0 tensorflow-hub-0.13.0 tensorflow-intel-2.11.1 tensorflow-io-gcs-filesystem-0.31.0 tensorflow-metadata-1.13.0 termcolor-2.3.0 toml-0.10.2 tqdm-4.65.0 typing-extensions-4.6.3 tzdata-2023.3 urllib3-1.26.16 werkzeug-2.3.6 wheel-0.40.0 wrapt-1.15.0 zipp-3.15.0
+
+Installation complete.
+
+
+Restarting R session...
+
+> library(keras)
+Warning messages:
+1: pakiet ‘tensorflow’ został zbudowany w wersji R 4.1.3 
+2: pakiet ‘keras’ został zbudowany w wersji R 4.1.3 
+> mnist <- dataset\_mnist()
+Error: unexpected '\\' in "mnist <- dataset\"
+> mnist <- dataset_mnist()
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11490434/11490434 [==============================] - 1s 0us/step
+> # Import biblioteki Keras i rozpakowanie danych
+> mnist <- dataset_mnist()
+> x_train <- mnist$train$x
+> x_test <- mnist$test$x
+> y_train <- mnist$train$y
+> y_test <- mnist$test$y
+> # Ustalenie zakresu wartości matrycy obrazu do [0,1]
+> x_train <- x_train / 255
+> x_test <- x_test / 255
+> # Konwersja liczb całkowitych na kategorie
+> y_train <- to_categorical(y_train, num_classes = 10)
+> y_test <- to_categorical(y_test, num_classes = 10)
+> # Trening modelu (trzy ukryte warstwy, na końcu warstwa wyjściowa)
+> model <- keras_model_sequential() %>%
++   layer_dense(units = 256, activation = "relu", input_shape = c(784)) %>%
++   layer_dropout(rate = 0.25) %>%
++   layer_dense(units = 128, activation = "relu") %>%
++   layer_dropout(rate = 0.25) %>%
++   layer_dense(units = 64, activation = "relu") %>%
++   layer_dropout(rate = 0.25) %>%
++   layer_dense(units = 10, activation = "softmax")
+2023-06-16 01:42:03.575367: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+> # Trening modelu (ukryta warstwa, na końcu warstwa wyjściowa)
+> model <- keras_model_sequential() %>%
++   layer_flatten(input_shape = c(28, 28)) %>%
++   layer_dense(units = 128, activation = "relu") %>%
++   layer_dense(units = 10, activation = "softmax")
+> # Wyświetlenie architektury modelu
+> summary(model)
+Model: "sequential_1"
+_______________________________________________________________________________________________________________
+ Layer (type)                                    Output Shape                                 Param #          
+===============================================================================================================
+ flatten (Flatten)                               (None, 784)                                  0                
+ dense_5 (Dense)                                 (None, 128)                                  100480           
+ dense_4 (Dense)                                 (None, 10)                                   1290             
+===============================================================================================================
+Total params: 101,770
+Trainable params: 101,770
+Non-trainable params: 0
+_______________________________________________________________________________________________________________
+> # Kompilacja
+> model %>% compile(
++   loss = "categorical_crossentropy",
++   optimizer = optimizer_adam(),
++   metrics = c("accuracy")
++ )
+> # Trenowanie modelu funkcją fit()
+> history <- model %>%
++   fit( x_train, y_train, epochs = 50, batch_size = 128, validation_split = 0.15)
+Epoch 1/50
+399/399 [==============================] - 2s 4ms/step - loss: 0.3875 - accuracy: 0.8928 - val_loss: 0.1888 - val_accuracy: 0.9488
+Epoch 2/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.1754 - accuracy: 0.9503 - val_loss: 0.1368 - val_accuracy: 0.9626
+Epoch 3/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.1267 - accuracy: 0.9635 - val_loss: 0.1127 - val_accuracy: 0.9690
+Epoch 4/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0999 - accuracy: 0.9721 - val_loss: 0.1013 - val_accuracy: 0.9707
+Epoch 5/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0811 - accuracy: 0.9770 - val_loss: 0.0898 - val_accuracy: 0.9731
+Epoch 6/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0672 - accuracy: 0.9811 - val_loss: 0.0866 - val_accuracy: 0.9747
+Epoch 7/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0579 - accuracy: 0.9831 - val_loss: 0.0865 - val_accuracy: 0.9754
+Epoch 8/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0484 - accuracy: 0.9863 - val_loss: 0.0819 - val_accuracy: 0.9762
+Epoch 9/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0411 - accuracy: 0.9888 - val_loss: 0.0841 - val_accuracy: 0.9750
+Epoch 10/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0358 - accuracy: 0.9905 - val_loss: 0.0797 - val_accuracy: 0.9771
+Epoch 11/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0306 - accuracy: 0.9923 - val_loss: 0.0805 - val_accuracy: 0.9772
+Epoch 12/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0257 - accuracy: 0.9936 - val_loss: 0.0819 - val_accuracy: 0.9766
+Epoch 13/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0227 - accuracy: 0.9944 - val_loss: 0.0810 - val_accuracy: 0.9773
+Epoch 14/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0201 - accuracy: 0.9950 - val_loss: 0.0792 - val_accuracy: 0.9789
+Epoch 15/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0161 - accuracy: 0.9966 - val_loss: 0.0842 - val_accuracy: 0.9767
+Epoch 16/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0143 - accuracy: 0.9970 - val_loss: 0.0828 - val_accuracy: 0.9777
+Epoch 17/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0127 - accuracy: 0.9977 - val_loss: 0.0790 - val_accuracy: 0.9788
+Epoch 18/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0099 - accuracy: 0.9986 - val_loss: 0.0813 - val_accuracy: 0.9802
+Epoch 19/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0089 - accuracy: 0.9985 - val_loss: 0.0844 - val_accuracy: 0.9786
+Epoch 20/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0082 - accuracy: 0.9986 - val_loss: 0.0885 - val_accuracy: 0.9772
+Epoch 21/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0071 - accuracy: 0.9989 - val_loss: 0.0881 - val_accuracy: 0.9783
+Epoch 22/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0064 - accuracy: 0.9988 - val_loss: 0.0893 - val_accuracy: 0.9780
+Epoch 23/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0054 - accuracy: 0.9991 - val_loss: 0.0879 - val_accuracy: 0.9788
+Epoch 24/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0065 - accuracy: 0.9985 - val_loss: 0.0927 - val_accuracy: 0.9782
+Epoch 25/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0045 - accuracy: 0.9994 - val_loss: 0.0950 - val_accuracy: 0.9791
+Epoch 26/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0035 - accuracy: 0.9996 - val_loss: 0.0926 - val_accuracy: 0.9794
+Epoch 27/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0020 - accuracy: 0.9999 - val_loss: 0.0929 - val_accuracy: 0.9781
+Epoch 28/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0018 - accuracy: 1.0000 - val_loss: 0.0939 - val_accuracy: 0.9792
+Epoch 29/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0058 - accuracy: 0.9983 - val_loss: 0.1003 - val_accuracy: 0.9770
+Epoch 30/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0082 - accuracy: 0.9974 - val_loss: 0.1009 - val_accuracy: 0.9766
+Epoch 31/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0024 - accuracy: 0.9997 - val_loss: 0.1022 - val_accuracy: 0.9770
+Epoch 32/50
+399/399 [==============================] - 1s 3ms/step - loss: 0.0013 - accuracy: 0.9999 - val_loss: 0.0984 - val_accuracy: 0.9787
+Epoch 33/50
+399/399 [==============================] - 1s 3ms/step - loss: 8.1050e-04 - accuracy: 1.0000 - val_loss: 0.0996 - val_accuracy: 0.9783
+Epoch 34/50
+399/399 [==============================] - 1s 2ms/step - loss: 6.5936e-04 - accuracy: 1.0000 - val_loss: 0.0977 - val_accuracy: 0.9789
+Epoch 35/50
+399/399 [==============================] - 1s 2ms/step - loss: 5.9379e-04 - accuracy: 1.0000 - val_loss: 0.1025 - val_accuracy: 0.9790
+Epoch 36/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0063 - accuracy: 0.9980 - val_loss: 0.1151 - val_accuracy: 0.9756
+Epoch 37/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0086 - accuracy: 0.9971 - val_loss: 0.1209 - val_accuracy: 0.9771
+Epoch 38/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0014 - accuracy: 0.9999 - val_loss: 0.1070 - val_accuracy: 0.9790
+Epoch 39/50
+399/399 [==============================] - 1s 2ms/step - loss: 5.7380e-04 - accuracy: 1.0000 - val_loss: 0.1071 - val_accuracy: 0.9798
+Epoch 40/50
+399/399 [==============================] - 1s 2ms/step - loss: 4.5539e-04 - accuracy: 1.0000 - val_loss: 0.1057 - val_accuracy: 0.9793
+Epoch 41/50
+399/399 [==============================] - 1s 2ms/step - loss: 3.9595e-04 - accuracy: 1.0000 - val_loss: 0.1068 - val_accuracy: 0.9796
+Epoch 42/50
+399/399 [==============================] - 1s 2ms/step - loss: 3.5722e-04 - accuracy: 1.0000 - val_loss: 0.1077 - val_accuracy: 0.9789
+Epoch 43/50
+399/399 [==============================] - 1s 2ms/step - loss: 3.2479e-04 - accuracy: 1.0000 - val_loss: 0.1078 - val_accuracy: 0.9786
+Epoch 44/50
+399/399 [==============================] - 1s 2ms/step - loss: 2.9293e-04 - accuracy: 1.0000 - val_loss: 0.1087 - val_accuracy: 0.9793
+Epoch 45/50
+399/399 [==============================] - 1s 2ms/step - loss: 2.6803e-04 - accuracy: 1.0000 - val_loss: 0.1111 - val_accuracy: 0.9793
+Epoch 46/50
+399/399 [==============================] - 1s 2ms/step - loss: 2.4639e-04 - accuracy: 1.0000 - val_loss: 0.1098 - val_accuracy: 0.9790
+Epoch 47/50
+399/399 [==============================] - 1s 2ms/step - loss: 2.2570e-04 - accuracy: 1.0000 - val_loss: 0.1110 - val_accuracy: 0.9792
+Epoch 48/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0069 - accuracy: 0.9979 - val_loss: 0.1346 - val_accuracy: 0.9731
+Epoch 49/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0104 - accuracy: 0.9965 - val_loss: 0.1301 - val_accuracy: 0.9761
+Epoch 50/50
+399/399 [==============================] - 1s 2ms/step - loss: 0.0019 - accuracy: 0.9996 - val_loss: 0.1218 - val_accuracy: 0.9784
+> # Ocena wydajności na zbiorze
+> model %>% evaluate(x_test, y_test)
+313/313 [==============================] - 0s 939us/step - loss: 0.1189 - accuracy: 0.9786
+     loss  accuracy 
+0.1189059 0.9786000 
