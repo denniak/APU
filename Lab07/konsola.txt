@@ -1,0 +1,981 @@
+downloaded 2.8 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/BH_1.81.0-1.zip'
+Content type 'application/zip' length 21361366 bytes (20.4 MB)
+downloaded 20.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tm_0.7-11.zip'
+Content type 'application/zip' length 1354424 bytes (1.3 MB)
+downloaded 1.3 MB
+
+package ‘NLP’ successfully unpacked and MD5 sums checked
+package ‘slam’ successfully unpacked and MD5 sums checked
+package ‘xml2’ successfully unpacked and MD5 sums checked
+package ‘BH’ successfully unpacked and MD5 sums checked
+package ‘tm’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("SnowballC")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+
+  Jest dostępna wersja binarna ale wersja ze źródłami jest późniejsza:
+          binary source needs_compilation
+SnowballC  0.7.0  0.7.1              TRUE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/SnowballC_0.7.0.zip'
+Content type 'application/zip' length 450226 bytes (439 KB)
+downloaded 439 KB
+
+package ‘SnowballC’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("wordcloud")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/wordcloud_2.6.zip'
+Content type 'application/zip' length 782413 bytes (764 KB)
+downloaded 764 KB
+
+package ‘wordcloud’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("RColorBrewer")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/RColorBrewer_1.1-3.zip'
+Content type 'application/zip' length 55887 bytes (54 KB)
+downloaded 54 KB
+
+package ‘RColorBrewer’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("syuzhet")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+instalowanie dodatkowych zależności ‘textshape’, ‘zoo’, ‘dtt’
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/textshape_1.7.3.zip'
+Content type 'application/zip' length 535023 bytes (522 KB)
+downloaded 522 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/zoo_1.8-12.zip'
+Content type 'application/zip' length 1032683 bytes (1008 KB)
+downloaded 1008 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/dtt_0.1-2.zip'
+Content type 'application/zip' length 21702 bytes (21 KB)
+downloaded 21 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/syuzhet_1.0.6.zip'
+Content type 'application/zip' length 3107931 bytes (3.0 MB)
+downloaded 3.0 MB
+
+package ‘textshape’ successfully unpacked and MD5 sums checked
+package ‘zoo’ successfully unpacked and MD5 sums checked
+package ‘dtt’ successfully unpacked and MD5 sums checked
+package ‘syuzhet’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("ggplot2")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/ggplot2_3.4.2.zip'
+Content type 'application/zip' length 4295743 bytes (4.1 MB)
+downloaded 4.1 MB
+
+package ‘ggplot2’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> library("tm")
+Ładowanie wymaganego pakietu: NLP
+Warning messages:
+1: pakiet ‘tm’ został zbudowany w wersji R 4.1.3 
+2: pakiet ‘NLP’ został zbudowany w wersji R 4.1.1 
+> library("SnowballC")
+Warning message:
+pakiet ‘SnowballC’ został zbudowany w wersji R 4.1.1 
+> library("wordcloud")
+Ładowanie wymaganego pakietu: RColorBrewer
+Warning messages:
+1: pakiet ‘wordcloud’ został zbudowany w wersji R 4.1.3 
+2: pakiet ‘RColorBrewer’ został zbudowany w wersji R 4.1.3 
+> library("RColorBrewer")
+> library("syuzhet")
+Warning message:
+pakiet ‘syuzhet’ został zbudowany w wersji R 4.1.3 
+> text <- readLines("ai.txt")
+Error in file(con, "r") : cannot open the connection
+In addition: Warning message:
+In file(con, "r") : cannot open file 'ai.txt': No such file or directory
+> text <- readLines("E:/Users/denn/Desktop/ai.txt")
+Warning message:
+In readLines("E:/Users/denn/Desktop/ai.txt") :
+  incomplete final line found on 'E:/Users/denn/Desktop/ai.txt'
+> text <- readLines("E:/Users/denn/Desktop/ai.txt")
+Warning message:
+In readLines("E:/Users/denn/Desktop/ai.txt") :
+  incomplete final line found on 'E:/Users/denn/Desktop/ai.txt'
+> text <- readLines("E:/Users/denn/Desktop/ai.txt")
+Warning message:
+In readLines("E:/Users/denn/Desktop/ai.txt") :
+  incomplete final line found on 'E:/Users/denn/Desktop/ai.txt'
+> text <- readLines("E:/Users/denn/Desktop/ai.txt")
+> TextDoc <- Corpus(VectorSource(text))
+> # Funkcje czyszczące tekst
+> toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+> TextDoc <- tm_map(TextDoc, toSpace, "/")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, "/") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, "@")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, "@") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, "\\|")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, "\\|") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, "ˆa“")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, "^a“") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, ":")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, ":") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, ";")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, ";") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, toSpace, ",")
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, toSpace, ",") :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, content_transformer(tolower))
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, content_transformer(tolower)) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, removeNumbers)
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, removeNumbers) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, removeWords, stopwords("english"))
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, removeWords, stopwords("english")) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, removeWords, c("s", "company", "team"))
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, removeWords, c("s", "company", "team")) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, removePunctuation)
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, removePunctuation) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, stripWhitespace)
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, stripWhitespace) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, stemDocument)
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, stemDocument) :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, content_transformer(
++   function(x) gsub(x, pattern = "mathemat", replacement = "math")))
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, content_transformer(function(x) gsub(x,  :
+  transformation drops documents
+> TextDoc <- tm_map(TextDoc, content_transformer(
++   function(x) gsub(x, pattern = " r ", replacement = " Rlanguage ")))
+Warning message:
+In tm_map.SimpleCorpus(TextDoc, content_transformer(function(x) gsub(x,  :
+  transformation drops documents
+> TextDoc_dtm <- TermDocumentMatrix(TextDoc)
+> dtm_m <- as.matrix(TextDoc_dtm)
+> dtm_v <- sort(rowSums(dtm_m),decreasing=TRUE)
+> dtm_d <- data.frame(word = names(dtm_v),freq=dtm_v)
+> head(dtm_d, 5)
+             word freq
+intellig intellig  103
+artifici artifici   65
+use           use   55
+machin     machin   54
+learn       learn   52
+> barplot(dtm_d[1:20,]$freq, las = 2, names.arg = dtm_d[1:20,]$word,
++         col ="lightgreen",
++         main ="Top 20 most frequent words",
++         ylab = "Frequency")
+> set.seed(1234)
+> wordcloud(words = dtm_d$word, freq = dtm_d$freq, scale=c(5,0.5),
++           min.freq = 1,
++           max.words=100, random.order=FALSE,
++           rot.per=0.40,
++           colors=brewer.pal(8, "Dark2"))
+> findAssocs(TextDoc_dtm, terms = c("program","algorithm", "layer", "logic"),
++            corlimit = 0.5)
+$program
+      select        black        claim        compa compasassign       correl 
+        0.70         0.66         0.66         0.66         0.66         0.66 
+       court       defend       despit     inadvert   likelihood    overestim 
+        0.66         0.66         0.66         0.66         0.66         0.66 
+    programm   propublica      recidiv   recidivist      resembl       unawar 
+        0.66         0.66         0.66         0.66         0.66         0.66 
+    introduc     individu        group    realworld        exist         bias 
+        0.60         0.59         0.59         0.56         0.56         0.51 
+
+$algorithm
+      anneal          ant         beam         bird        blind      classic 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+       climb       coloni      coordin      fittest        flock         gene 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+        hill    increment         jump         keep         kind  metaheurist 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+       mutat     recombin        trail        uphil          via        guess 
+        0.71         0.71         0.71         0.71         0.71         0.68 
+       genet        optim        swarm        refin        begin       random 
+        0.68         0.67         0.67         0.67         0.63         0.63 
+evolutionari     landscap        popul       inspir       search         step 
+        0.62         0.58         0.58         0.57         0.52         0.52 
+         use 
+        0.51 
+
+$layer
+    drastic     extract higherlevel      letter       lower        imag        deep 
+       0.76        0.76        0.76        0.76        0.76        0.71        0.66 
+    multipl    convolut      cortex   hierarchi      recept    restrict    progress 
+       0.65        0.57        0.57        0.57        0.57        0.57        0.53 
+        edg         raw      higher      import       relev 
+       0.53        0.53        0.53        0.53        0.53 
+
+$logic
+          add          alic          aris        assign        belief      calculus 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       causal  circumscript contradictori        extens          fals      firstord 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       fluent        hungri     inconsist         modal    nonmonoton   paraconsist 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       predic      proposit        qualif      quantifi         revis          rich 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+         tall          vagu         truth       default     statement        design 
+         0.92          0.92          0.86          0.82          0.75          0.73 
+     linguist      imprecis         event        involv       multiag         degre 
+         0.70          0.70          0.69          0.65          0.65          0.65 
+        handl           old      descript         sever         fuzzi        situat 
+         0.65          0.65          0.62          0.60          0.57          0.53 
+      complet 
+         0.53 
+
+> findAssocs(TextDoc_dtm, terms = findFreqTerms(TextDoc_dtm, lowfreq = 30),
++            corlimit = 0.5)
+$artifici
+numeric(0)
+
+$comput
+numeric(0)
+
+$human
+       acquir       benevol       bostrom         charl         choos           end 
+         0.56          0.56          0.56          0.56          0.56          0.56 
+         harm         humbl indistinguish       mankind          nick     physicist 
+         0.56          0.56          0.56          0.56          0.56          0.56 
+         pose        priori           put       reflect       resourc         rubin 
+         0.56          0.56          0.56          0.56          0.56          0.56 
+        share          shut         spell         treat         ultim         might 
+         0.56          0.56          0.56          0.56          0.56          0.55 
+         hawk       malevol          argu 
+         0.55          0.55          0.51 
+
+$intellig
+general 
+    0.5 
+
+$machin
+ethic 
+ 0.52 
+
+$system
+   chess deepmind 
+    0.52     0.52 
+
+$use
+   explan     occur    smooth  bayesian      plan   percept   various incomplet 
+     0.64      0.64      0.64      0.60      0.56      0.55      0.53      0.51 
+
+$learn
+ output classif 
+   0.55    0.51 
+
+$logic
+          add          alic          aris        assign        belief      calculus 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       causal  circumscript contradictori        extens          fals      firstord 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       fluent        hungri     inconsist         modal    nonmonoton   paraconsist 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+       predic      proposit        qualif      quantifi         revis          rich 
+         0.92          0.92          0.92          0.92          0.92          0.92 
+         tall          vagu         truth       default     statement        design 
+         0.92          0.92          0.86          0.82          0.75          0.73 
+     linguist      imprecis         event        involv       multiag         degre 
+         0.70          0.70          0.69          0.65          0.65          0.65 
+        handl           old      descript         sever         fuzzi        situat 
+         0.65          0.65          0.62          0.60          0.57          0.53 
+      complet 
+         0.53 
+
+$problem
+solv 
+ 0.6 
+
+$research
+field 
+ 0.52 
+
+$network
+     neural       acycl        basi    feedback feedforward    multilay        pass 
+       0.83        0.55        0.55        0.55        0.55        0.55        0.55 
+     radial   shortterm  perceptron 
+       0.55        0.55        0.54 
+
+$can
+    case gradient 
+    0.53     0.51 
+
+$articl
+numeric(0)
+
+$main
+numeric(0)
+
+$algorithm
+      anneal          ant         beam         bird        blind      classic 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+       climb       coloni      coordin      fittest        flock         gene 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+        hill    increment         jump         keep         kind  metaheurist 
+        0.71         0.71         0.71         0.71         0.71         0.71 
+       mutat     recombin        trail        uphil          via        guess 
+        0.71         0.71         0.71         0.71         0.71         0.68 
+       genet        optim        swarm        refin        begin       random 
+        0.68         0.67         0.67         0.67         0.63         0.63 
+evolutionari     landscap        popul       inspir       search         step 
+        0.62         0.58         0.58         0.57         0.52         0.52 
+
+> syuzhet_vector <- get_sentiment(text, method="syuzhet")
+> head(syuzhet_vector)
+[1] 3.25 0.00 5.75 0.00 0.60 0.00
+> summary(syuzhet_vector)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-3.1000  0.0000  0.0000  0.9447  1.3000  9.9000 
+> bing_vector <- get_sentiment(text, method="bing")
+> head(bing_vector)
+[1] 2 0 3 0 2 0
+> summary(bing_vector)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-5.0000  0.0000  0.0000  0.3365  1.0000  6.0000 
+> afinn_vector <- get_sentiment(text, method="afinn")
+> head(afinn_vector)
+[1] 4 0 3 0 1 0
+> summary(afinn_vector)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-11.0000   0.0000   0.0000   0.5192   0.0000  14.0000 
+> rbind(
++   sign(head(syuzhet_vector)),
++   sign(head(bing_vector)),
++   sign(head(afinn_vector))
++ )
+     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]    1    0    1    0    1    0
+[2,]    1    0    1    0    1    0
+[3,]    1    0    1    0    1    0
+> d<-get_nrc_sentiment(as.vector(dtm_d$word))
+Warning message:
+`spread_()` was deprecated in tidyr 1.2.0.
+i Please use `spread()` instead.
+i The deprecated feature was likely used in the syuzhet package.
+  Please report the issue to the authors.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated. 
+> head (d,10)
+   anger anticipation disgust fear joy sadness surprise trust negative positive
+1      0            0       0    0   0       0        0     0        0        0
+2      0            0       0    0   0       0        0     0        0        0
+3      0            0       0    0   0       0        0     0        0        0
+4      0            0       0    0   0       0        0     0        0        0
+5      0            0       0    0   0       0        0     0        0        1
+6      0            0       0    0   0       0        0     0        0        0
+7      0            0       0    0   0       0        0     0        0        0
+8      0            0       0    0   0       0        0     0        0        0
+9      0            0       0    1   0       1        0     0        1        0
+10     0            0       0    0   0       0        0     0        0        0
+> d<-get_nrc_sentiment(as.vector(dtm_d$word))
+> head (d,10)
+   anger anticipation disgust fear joy sadness surprise trust negative positive
+1      0            0       0    0   0       0        0     0        0        0
+2      0            0       0    0   0       0        0     0        0        0
+3      0            0       0    0   0       0        0     0        0        0
+4      0            0       0    0   0       0        0     0        0        0
+5      0            0       0    0   0       0        0     0        0        1
+6      0            0       0    0   0       0        0     0        0        0
+7      0            0       0    0   0       0        0     0        0        0
+8      0            0       0    0   0       0        0     0        0        0
+9      0            0       0    1   0       1        0     0        1        0
+10     0            0       0    0   0       0        0     0        0        0
+> td<-data.frame(t(d))
+> td_new <- data.frame(rowSums(td[1:56]))
+> names(td_new)[1] <- "count"
+> td_new <- cbind("sentiment" = rownames(td_new), td_new)
+> rownames(td_new) <- NULL
+> td_new2<-td_new[1:8,]
+> quickplot(sentiment, data=td_new2, weight=count, geom="bar", fill=sentiment,
++           ylab="count")+ggtitle("Survey sentiments")
+Error in quickplot(sentiment, data = td_new2, weight = count, geom = "bar",  : 
+  could not find function "quickplot"
+> library("ggplot2")
+
+Dołączanie pakietu: ‘ggplot2’
+
+Następujący obiekt został zakryty z ‘package:NLP’:
+
+    annotate
+
+Warning message:
+pakiet ‘ggplot2’ został zbudowany w wersji R 4.1.3 
+> quickplot(sentiment, data=td_new2, weight=count, geom="bar", fill=sentiment,
++           ylab="count")+ggtitle("Survey sentiments")
+Warning message:
+`qplot()` was deprecated in ggplot2 3.4.0.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated. 
+> barplot(
++   sort(colSums(prop.table(d[, 1:8]))),
++   horiz = TRUE,
++   cex.names = 0.7,
++   las = 1,
++   main = "Emotions in Text", xlab="Percentage"
++ )
+> quickplot(sentiment, data=td_new2, weight=count, geom="bar", fill=sentiment,
++           ylab="count")+ggtitle("Survey sentiments")
+
+> install.packages("tidytext")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+instalowanie dodatkowych zależności ‘janeaustenr’, ‘tokenizers’
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/janeaustenr_1.0.0.zip'
+Content type 'application/zip' length 1626285 bytes (1.6 MB)
+downloaded 1.6 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tokenizers_0.3.0.zip'
+Content type 'application/zip' length 1340357 bytes (1.3 MB)
+downloaded 1.3 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tidytext_0.4.1.zip'
+Content type 'application/zip' length 3051464 bytes (2.9 MB)
+downloaded 2.9 MB
+
+package ‘janeaustenr’ successfully unpacked and MD5 sums checked
+package ‘tokenizers’ successfully unpacked and MD5 sums checked
+package ‘tidytext’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("igraph")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+
+  Jest dostępna wersja binarna ale wersja ze źródłami jest
+  późniejsza:
+       binary source needs_compilation
+igraph  1.4.2  1.4.3              TRUE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/igraph_1.4.2.zip'
+Content type 'application/zip' length 10190841 bytes (9.7 MB)
+downloaded 9.7 MB
+
+package ‘igraph’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> install.packages("ggraph")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+instalowanie dodatkowych zależności ‘tweenr’, ‘polyclip’, ‘systemfonts’, ‘RcppEigen’, ‘RcppArmadillo’, ‘ggforce’, ‘ggrepel’, ‘tidygraph’, ‘graphlayouts’
+
+
+  Są dostępne wersje binarne, ale wersje ze źródłami są późniejsze:
+                  binary     source needs_compilation
+RcppArmadillo 0.12.2.0.0 0.12.4.0.0              TRUE
+graphlayouts       0.8.4      1.0.0              TRUE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tweenr_2.0.2.zip'
+Content type 'application/zip' length 795737 bytes (777 KB)
+downloaded 777 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/polyclip_1.10-4.zip'
+Content type 'application/zip' length 716761 bytes (699 KB)
+downloaded 699 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/systemfonts_1.0.4.zip'
+Content type 'application/zip' length 2021580 bytes (1.9 MB)
+downloaded 1.9 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/RcppEigen_0.3.3.9.3.zip'
+Content type 'application/zip' length 2704981 bytes (2.6 MB)
+downloaded 2.6 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/RcppArmadillo_0.12.2.0.0.zip'
+Content type 'application/zip' length 2406026 bytes (2.3 MB)
+downloaded 2.3 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/ggforce_0.4.1.zip'
+Content type 'application/zip' length 2620382 bytes (2.5 MB)
+downloaded 2.5 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/ggrepel_0.9.3.zip'
+Content type 'application/zip' length 983604 bytes (960 KB)
+downloaded 960 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tidygraph_1.2.3.zip'
+Content type 'application/zip' length 661311 bytes (645 KB)
+downloaded 645 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/graphlayouts_0.8.4.zip'
+Content type 'application/zip' length 3416799 bytes (3.3 MB)
+downloaded 3.3 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/ggraph_2.1.0.zip'
+Content type 'application/zip' length 4692279 bytes (4.5 MB)
+downloaded 4.5 MB
+
+package ‘tweenr’ successfully unpacked and MD5 sums checked
+package ‘polyclip’ successfully unpacked and MD5 sums checked
+package ‘systemfonts’ successfully unpacked and MD5 sums checked
+package ‘RcppEigen’ successfully unpacked and MD5 sums checked
+package ‘RcppArmadillo’ successfully unpacked and MD5 sums checked
+package ‘ggforce’ successfully unpacked and MD5 sums checked
+package ‘ggrepel’ successfully unpacked and MD5 sums checked
+package ‘tidygraph’ successfully unpacked and MD5 sums checked
+package ‘graphlayouts’ successfully unpacked and MD5 sums checked
+package ‘ggraph’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> library("tidytext")
+Warning message:
+pakiet ‘tidytext’ został zbudowany w wersji R 4.1.3 
+> library("igraph")
+
+Dołączanie pakietu: ‘igraph’
+
+Następujące obiekty zostały zakryte z ‘package:keras’:
+
+    %<-%, normalize
+
+Następujące obiekty zostały zakryte z ‘package:stats’:
+
+    decompose, spectrum
+
+Następujący obiekt został zakryty z ‘package:base’:
+
+    union
+
+Warning message:
+pakiet ‘igraph’ został zbudowany w wersji R 4.1.3 
+> library("ggraph")
+Warning message:
+pakiet ‘ggraph’ został zbudowany w wersji R 4.1.3 
+> install.packages("dplyr")
+Error in install.packages : Updating loaded packages
+> install.packages("dplyr")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/dplyr_1.1.2.zip'
+Content type 'application/zip' length 1646641 bytes (1.6 MB)
+downloaded 1.6 MB
+
+package ‘dplyr’ successfully unpacked and MD5 sums checked
+Warning in install.packages :
+  cannot remove prior installation of package ‘dplyr’
+Warning in install.packages :
+  problem copying E:\Users\denn\Documents\R\win-library\4.1\00LOCK\dplyr\libs\x64\dplyr.dll to E:\Users\denn\Documents\R\win-library\4.1\dplyr\libs\x64\dplyr.dll: Permission denied
+Warning in install.packages :
+  restored ‘dplyr’
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> library("dplyr")
+
+Dołączanie pakietu: ‘dplyr’
+
+Następujące obiekty zostały zakryte z ‘package:igraph’:
+
+    as_data_frame, groups, union
+
+Następujące obiekty zostały zakryte z ‘package:stats’:
+
+    filter, lag
+
+Następujące obiekty zostały zakryte z ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+pakiet ‘dplyr’ został zbudowany w wersji R 4.1.3 
+> fileName <- "ai.txt"
+> setwd('E:\\Users\\denn\\Desktop')
+> fileName <- "ai.txt"
+> text <- readChar(fileName, file.info(fileName)$size)
+> text_df <- data_frame(line = 1, text = text)
+Warning message:
+`data_frame()` was deprecated in tibble 1.1.0.
+i Please use `tibble()` instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+generated. 
+> text_df
+# A tibble: 1 x 2
+   line text                                                                 
+  <dbl> <chr>                                                                
+1     1 "Artificial intelligence (AI) is intelligenceâ€”perceiving, synthesi~
+> tidy_text <- text_df %>%
++   unnest_tokens(word, text)
+> data(stop_words)
+> stop_words <- rbind(stop_words,de)
+Error in rep(xi, length.out = nvar) : 
+  attempt to replicate an object of type 'closure'
+> tidy_text <- tidy_text %>%
++   anti_join(stop_words)
+Joining with `by = join_by(word)`
+> tidy_text %>%
++   count(word, sort = TRUE)
+# A tibble: 2,232 x 2
+   word             n
+   <chr>        <int>
+ 1 ai             140
+ 2 intelligence    86
+ 3 artificial      64
+ 4 learning        46
+ 5 machine         37
+ 6 human           34
+ 7 main            34
+ 8 networks        28
+ 9 knowledge       25
+10 research        25
+# i 2,222 more rows
+# i Use `print(n = ...)` to see more rows
+> de <- data.frame("thy","OLD_WORDS")
+> names(de) <- c("word","lexicon")
+> stop_words <- rbind(stop_words,de)
+> tidy_text <- tidy_text %>%
++   anti_join(stop_words)
+Joining with `by = join_by(word)`
+> tidy_text %>%
++   count(word, sort = TRUE)
+# A tibble: 2,232 x 2
+   word             n
+   <chr>        <int>
+ 1 ai             140
+ 2 intelligence    86
+ 3 artificial      64
+ 4 learning        46
+ 5 machine         37
+ 6 human           34
+ 7 main            34
+ 8 networks        28
+ 9 knowledge       25
+10 research        25
+# i 2,222 more rows
+# i Use `print(n = ...)` to see more rows
+> text_bigrams <- text_df %>%
++   unnest_tokens(bigram, text, token = "ngrams", n = 2)
+> text_bigrams
+# A tibble: 8,951 x 2
+    line bigram                   
+   <dbl> <chr>                    
+ 1     1 artificial intelligence  
+ 2     1 intelligence ai          
+ 3     1 ai is                    
+ 4     1 is intelligenceâ         
+ 5     1 intelligenceâ perceiving 
+ 6     1 perceiving synthesizing  
+ 7     1 synthesizing and         
+ 8     1 and inferring            
+ 9     1 inferring informationâ   
+10     1 informationâ demonstrated
+# i 8,941 more rows
+# i Use `print(n = ...)` to see more rows
+> text_bigrams %>%
++   count(bigram, sort = TRUE)
+# A tibble: 7,136 x 2
+   bigram                      n
+   <chr>                   <int>
+ 1 artificial intelligence    41
+ 2 in the                     40
+ 3 of the                     38
+ 4 such as                    37
+ 5 main articles              20
+ 6 and the                    19
+ 7 neural networks            19
+ 8 to the                     19
+ 9 as the                     18
+10 can be                     18
+# i 7,126 more rows
+# i Use `print(n = ...)` to see more rows
+> install.packages("tidyr")
+Error in install.packages : Updating loaded packages
+> install.packages("tidyr")
+Instalowanie pakietu w ‘E:/Users/denn/Documents/R/win-library/4.1’
+(ponieważ ‘lib’ nie jest określony)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.1/tidyr_1.3.0.zip'
+Content type 'application/zip' length 1440051 bytes (1.4 MB)
+downloaded 1.4 MB
+
+package ‘tidyr’ successfully unpacked and MD5 sums checked
+Warning in install.packages :
+  cannot remove prior installation of package ‘tidyr’
+Warning in install.packages :
+  problem copying E:\Users\denn\Documents\R\win-library\4.1\00LOCK\tidyr\libs\x64\tidyr.dll to E:\Users\denn\Documents\R\win-library\4.1\tidyr\libs\x64\tidyr.dll: Permission denied
+Warning in install.packages :
+  restored ‘tidyr’
+
+The downloaded binary packages are in
+	E:\Users\denn\AppData\Local\Temp\RtmpaABKBv\downloaded_packages
+> library("tidyr")
+
+Dołączanie pakietu: ‘tidyr’
+
+Następujący obiekt został zakryty z ‘package:igraph’:
+
+    crossing
+
+Warning message:
+pakiet ‘tidyr’ został zbudowany w wersji R 4.1.3 
+> bigrams_separated <- text_bigrams %>%
++   separate(bigram, c("word1", "word2"), sep = " ")
+> bigrams_filtered <- bigrams_separated %>%
++   filter(!word1 %in% stop_words$word) %>%
++   filter(!word2 %in% stop_words$word)
+> bigram_counts <- bigrams_filtered %>%
++   count(word1, word2, sort = TRUE)
+> bigram_counts
+# A tibble: 2,182 x 3
+   word1      word2            n
+   <chr>      <chr>        <int>
+ 1 artificial intelligence    41
+ 2 main       articles        20
+ 3 neural     networks        19
+ 4 ai         research        14
+ 5 machine    learning        13
+ 6 main       article         12
+ 7 deep       learning        10
+ 8 symbolic   ai               9
+ 9 ai         researchers      7
+10 natural    language         7
+# i 2,172 more rows
+# i Use `print(n = ...)` to see more rows
+> bigram_counts <- bigrams_filtered %>%
++   count(word1, word2, sort = TRUE)
+> bigram_counts
+# A tibble: 2,182 x 3
+   word1      word2            n
+   <chr>      <chr>        <int>
+ 1 artificial intelligence    41
+ 2 main       articles        20
+ 3 neural     networks        19
+ 4 ai         research        14
+ 5 machine    learning        13
+ 6 main       article         12
+ 7 deep       learning        10
+ 8 symbolic   ai               9
+ 9 ai         researchers      7
+10 natural    language         7
+# i 2,172 more rows
+# i Use `print(n = ...)` to see more rows
+> bigrams_united <- bigrams_filtered %>%
++   unite(bigram, word1, word2, sep = " ")
+> bigrams_united
+# A tibble: 2,535 x 2
+    line bigram                   
+   <dbl> <chr>                    
+ 1     1 artificial intelligence  
+ 2     1 intelligence ai          
+ 3     1 intelligenceâ perceiving 
+ 4     1 perceiving synthesizing  
+ 5     1 inferring informationâ   
+ 6     1 informationâ demonstrated
+ 7     1 intelligence displayed   
+ 8     1 include speech           
+ 9     1 speech recognition       
+10     1 recognition computer     
+# i 2,525 more rows
+# i Use `print(n = ...)` to see more rows
+> bigram_graph <- bigrams_counts %>%
++   filter(word1 == "ai") %>%
++   graph_from_data_frame()
+Error in filter(., word1 == "ai") : object 'bigrams_counts' not found
+> bigram_graph <- bigrams_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+Error in filter(., word1 == "ai" | word2 == "ai") : 
+  object 'bigrams_counts' not found
+> bigram_graph <- bigrams_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+Error in filter(., word1 == "ai" | word2 == "ai") : 
+  object 'bigrams_counts' not found
+> bigram_counts <- bigrams_filtered %>%
++   count(word1, word2, sort = TRUE)
+> bigram_graph <- bigrams_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+Error in filter(., word1 == "ai" | word2 == "ai") : 
+  object 'bigrams_counts' not found
+> bigram_graph <- bigrams_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+Error in filter(., word1 == "ai" | word2 == "ai") : 
+  object 'bigrams_counts' not found
+> bigram_graph <- bigram_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+> bigram_graph2 <- bigram_counts %>%
++   filter(word1 == "layer" | word2 == "layer") %>%
++   graph_from_data_frame()
+> bigram_graph3 <- bigram_counts %>%
++   filter(word1 == "neuron" | word2 == "layer") %>%
++   graph_from_data_frame()
+> bigram_graph2 <- bigram_counts %>%
++   filter(word1 == "layer" | word2 == "layer") %>%
++   graph_from_data_frame()
+> bigram_graph3
+IGRAPH 3488af8 DN-- 6 4 -- 
++ attr: name (v/c), n (e/n)
++ edges from 3488af8 (vertex names):
+[1] convolutional->layer    multi        ->layer    neuron       ->receives
+[4] previous     ->layer   
+> bigram_graph3 <- bigram_counts %>%
++   filter(word1 == "neuron" | word2 == "neuron") %>%
++   graph_from_data_frame()
+> bigram_graph <- bigram_counts %>%
++   filter(word1 == "ai" | word2 == "ai") %>%
++   graph_from_data_frame()
+> bigram_graph2 <- bigram_counts %>%
++   filter(word1 == "layer" | word2 == "layer") %>%
++   graph_from_data_frame()
+> bigram_graph3 <- bigram_counts %>%
++   filter(word1 == "neuron" | word2 == "neuron") %>%
++   graph_from_data_frame()
+> bigram_graph3
+IGRAPH 4d4a129 DN-- 3 2 -- 
++ attr: name (v/c), n (e/n)
++ edges from 4d4a129 (vertex names):
+[1] neuron->receives simple->neuron  
+> dev.new()
+NULL
+> ggraph(bigram_graph2, layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = NULL, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) + 
++   geom_node_text(aes(label = name), position = "identity") + 
++   theme_void()
+Warning message:
+Using the `size` aesthetic in this geom was deprecated in ggplot2 3.4.0.
+i Please use `linewidth` in the `default_aes` field and elsewhere instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+generated. 
+> dev.new(width = 550, height = 330, unit = "px")
+NULL
+> ggraph(bigram_graph3, layout = "fr") + 
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = NULL, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) + 
++   geom_node_text(aes(label = name), position = "identity") + 
++   theme_void()
+> bigram_graph1 <- bigram_counts %>%
++   filter(word1 %in% c("ai", "network") | word2 %in% c("ai", "network"))
+> bigram_graph2 <- bigram_counts %>%
++   filter(word1 %in% bigram_graph1$word1 | word1 %in% bigram_graph1$word2 | 
++            word2 %in% bigram_graph1$word1 | word2 %in% bigram_graph1$word2)
+> bigram_graph3 <- bigram_counts %>%
++   filter(word1 %in% bigram_graph2$word1 | word1 %in% bigram_graph2$word2 | 
++            word2 %in% bigram_graph2$word1 | word2 %in% bigram_graph2$word2)
+> bigram_graph
+IGRAPH 4bfa5d8 DN-- 97 98 -- 
++ attr: name (v/c), n (e/n)
++ edges from 4bfa5d8 (vertex names):
+ [1] ai          ->research     symbolic    ->ai          
+ [3] ai          ->researchers  ai          ->applications
+ [5] ai          ->safety       intelligence->ai          
+ [7] ai          ->programs     ai          ->related     
+ [9] ai          ->effect       ai          ->founder     
+[11] ai          ->main         ai          ->patent      
+[13] ai          ->patents      ai          ->program     
+[15] ai          ->winter       friendly    ->ai          
++ ... omitted several edges
+> set.seed(2016)
+> a <- grid::arrow(type = "closed", length = unit(.15, "inches"))
+> ggraph(bigram_graph1 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
+> ggraph(bigram_graph2 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
+> dev.new()
+NULL
+> ggraph(bigram_graph3 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n + 5), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
+> bigram_graph1 <- bigram_counts %>%
++   filter(word1 %in% c("ai", "network") | word2 %in% c("ai", "network"))
+> bigram_graph1 <- bigram_counts %>%
++   filter(word1 %in% c("ai", "network") | word2 %in% c("ai", "network"))
+> bigram_graph2 <- bigram_counts %>%
++   filter(word1 %in% bigram_graph1$word1 | word1 %in% bigram_graph1$word2 | 
++            word2 %in% bigram_graph1$word1 | word2 %in% bigram_graph1$word2)
+> bigram_graph3 <- bigram_counts %>%
++   filter(word1 %in% bigram_graph2$word1 | word1 %in% bigram_graph2$word2 | 
++            word2 %in% bigram_graph2$word1 | word2 %in% bigram_graph2$word2)
+> bigram_graph
+IGRAPH 4bfa5d8 DN-- 97 98 -- 
++ attr: name (v/c), n (e/n)
++ edges from 4bfa5d8 (vertex names):
+ [1] ai          ->research     symbolic    ->ai          
+ [3] ai          ->researchers  ai          ->applications
+ [5] ai          ->safety       intelligence->ai          
+ [7] ai          ->programs     ai          ->related     
+ [9] ai          ->effect       ai          ->founder     
+[11] ai          ->main         ai          ->patent      
+[13] ai          ->patents      ai          ->program     
+[15] ai          ->winter       friendly    ->ai          
++ ... omitted several edges
+> set.seed(2016)
+> a <- grid::arrow(type = "closed", length = unit(.15, "inches"))
+> ggraph(bigram_graph1 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
+> ggraph(bigram_graph2 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
+> dev.new()
+NULL
+> ggraph(bigram_graph3 %>% graph_from_data_frame(), layout = "fr") +
++   geom_edge_link(aes(edge_alpha = n + 5), show.legend = TRUE, arrow = a, end_cap = circle(.07, "inches")) +
++   geom_node_point(color = "lightblue", size = 5) +
++   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
++   theme_void()
